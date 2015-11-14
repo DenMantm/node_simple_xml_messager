@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><messages>
+
+<message>
+	<text>Your Message text
+</text>
+<from>den</from>
+</message>
+
+
+
+<message>
+<text> some text here</text>
+<from>diamond</from>
+</message>
+
+
+<message><text>Your Message text
+</text><from>den</from></message><sent><text>Your Message text
+</text>
+<from>diamond</from>
+</sent><message>
+<text> dddddd</text>
+<from>mumy</from>
+</message></messages>

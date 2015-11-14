@@ -1,0 +1,55 @@
+<div class="container color_background nopad">
+<div class="container">
+  <div class="col-md-4"></div>
+<div class="col-md-4">
+  <!-- LOGIN FORM -->
+  <div class='form' id='login_form'>
+  <h1><span class="fa fa-sign-in"></span> Simple XML Messager</h1>
+  <!-- show any messages that come back with authentication -->
+      <div class='menu'>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Recieved</button>
+  <button type="button" class="btn btn-primary">Sent</button>
+  <button type="button" class="btn btn-primary">Refresh</button>
+  <button onclick="javascript:location.reload();" type="button" class="btn btn-primary">LogOut</button>
+
+</div>
+      </div>
+      <div id='recContainer'>
+        <h1>Send Messages:</h1>
+      <div id='sent'></div>
+      <h4>To whom: </h4>
+    <select id="userSelect" size="1">
+    </select>
+    <h4>Message Text: </h4>
+    <textarea id='message'rows="4" cols="50">
+Your Message text
+</textarea>
+  <button id='sendButton' type="button" class="btn btn-primary">Send</button>
+        </div>
+      <div id='recContainer'>
+         <h1>Recieved Messages:</h1>
+    <div id='recieved'>
+       
+    </div>
+</div>
+</div >
+
+</div>
+<div id='messageBox' class="col-md-4">
+
+</div>
+</div>
+<br/>
+<footer class="text-center">
+  NCI Deniss Strods 2015 C.
+<br/>
+</footer>
+</div>
+    <script src="message.js" type="text/javascript"></script>
+<script>
+populateMessages();
+userList();
+
+
+</script>

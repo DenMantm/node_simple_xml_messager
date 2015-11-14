@@ -1,0 +1,21 @@
+.chatMessage1{
+background-color:gray;
+border-radius: 10px;
+}
+.chatMessage2{
+background-color:#089de3;
+color:white;
+border-radius: 10px;
+}
+.userName{
+	margin:0px;
+	margin-left:5px;
+	color:#FF9900;
+	font-size:15px;
+}
+.chatMessage{
+	margin:0px;
+	font-size:20px;
+	margin-left:5px;
+	margin-top:5px;
+}

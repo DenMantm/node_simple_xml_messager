@@ -1,0 +1,49 @@
+<div class="container color_background nopad">
+<div class="container">
+  <div class="col-md-4"></div>
+<div class="col-md-4">
+  <!-- LOGIN FORM -->
+  <div class='form' id='login_form'>
+  <h1><span class="fa fa-sign-in"></span> Simple XML Messager</h1>
+  <!-- show any messages that come back with authentication -->
+<script>
+
+    $("button").click(function(){
+      console.log('running');
+        $.post("/ifexists",
+
+        {
+          name: document.getElementById('name').value
+        },
+        function(data,status){
+          userName = document.getElementById('name').value;
+          if(data == 'new'){
+            alert('new user created');
+            loadPage('/messagePage',"#MainField");
+          }
+          else{console.log(data);}
+           loadPage('/messagePage',"#MainField");
+        });
+    });
+
+</script>
+  <div>
+    <p>System will creatre account if you dont have it</p>
+    <div class="form-group">
+      <label>YourName</label>
+      <input id='name' type="text" class="form-control" name="email">
+    </div>
+    <button id ='button'type="button" class="btn btn-warning btn-lg">Login or Create</button>
+  </div>
+  </div>
+</div>
+
+
+<div class="col-md-4"></div>
+</div>
+<br/>
+<footer class="text-center">
+  NCI Deniss Strods 2015 C.
+<br/>
+</footer>
+</div>
